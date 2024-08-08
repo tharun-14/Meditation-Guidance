@@ -1,0 +1,89 @@
+body, html {
+  margin: 0;
+  height: 100%; 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://imgs.search.brave.com/8kSY2Ucm8JZsdhQsTE2lEGQq7CYKUqZdJBELn36qD-Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9tZWRpdGF0aW5n/LWJ1ZGRoYS1sb3R1/cy1hYnN0cmFjdC1k/ZXBpY3Rpb25fMTA5/Mzg2OC00MDYuanBn/P3NpemU9NjI2JmV4/dD1qcGc");  
+}
+
+.header-container {
+  
+  color: white;
+  text-decoration:underline;
+}
+.heading{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 2px;
+}
+#login{
+    font-size: 25px;
+    border-color: gold;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 100px;
+    width: 90px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.submit_buttons{
+    text-align: center;
+}
+#SignUp{
+    font-size: 25px;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    border-color: gold;
+    background-color: black;
+}
+.message{
+    color: orange;
+    font-size: 50px;
+}
+#intro_first{
+    text-align: center;
+}
+.heading_services{
+    text-align: center;
+}
+#first_line{
+    color:cyan;
+    font-weight: bold;
+}
+@media only screen and (min-width: 769px) {
+    body {
+      flex-direction: column;
+    }
+    #heading {
+      width: 100%;
+      padding: 1em;
+    }
+    #certificates{
+      width: 100%;
+      padding: 2em;
+    }
+  }
+.explain{
+    font-size: 25px; 
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+}
+#explain_button{
+    font-size: 16px;
+    width: 200px;
+    background-color: transparent;
+    height: 140px;
+    color: white;
+}
+#services{
+    margin-top: 3px;
+    text-align:initial;
+}
+#continue{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}

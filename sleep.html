@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Sleep</title>
+        <link rel="stylesheet" href="sleep.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <nav>
+            <h1>Sleep more, Sleep PeaceFully</h1>
+        </nav>
+        <div class="sleep_page">
+            <div class="sleep_text">
+                <p id="heading">Just press play and drift away.</p>
+                <p id="explain">Join millions of sound sleepers worldwide. Fall asleep easily and naturally with our Sleep Stories, sleep meditations, exclusive sleep music and sleep sounds. With hundreds of titles to choose from, you'll be drifting off to dreamland in no time.</p>
+                <a href="#nav-container" class="arrow_head"><ion-icon name="arrow-down-circle-outline"></ion-icon></a>
+            </div>            
+                <img id="sleep_pic" src="https://img.freepik.com/premium-photo/cartoon-boy-sleeping-moon-with-stars-clouds_893012-115105.jpg?w=360">
+        </div>
+        <br><br><br><br>
+        <div id="nav-container">
+            <button id="button1">Sleep Stories</button>
+            <button id="button2">Music</button>
+            <button id="button3">Sleep Tracking</button>
+            <button id="button4">For Kids</button>
+
+            <div class="sleep_main">
+                <div class="sleep_main_text">
+                    <p id="head">Bedtime stories for grownups</p>
+                    <p id="text">Sleep Stories will guide you off to sleep quickly and naturally. Choose from 300+ titles, which includes celebrated voices like Matthew McConaughey, Idris Elba, and Jennifer Garner.</p>
+                    <p id="stories">Dream With Me</p>
+                    <p id="narrator" style="line-height: 0px;">Narrated by HarryStyles</p>
+                    <img src="recording.png" id="recording">
+                </div>
+                <img id="image" src="https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fsleep-player-harry.webp&w=1920&q=75" alt="Image 1">
+            </div>
+          </div><br><br><br><br><br><br><br>
+          <div class="go_back">
+            <p style=" color: black;">Press the button to go back to the Main Page</p>
+            <a href="welcome_page.html" class="arrow_head"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
+        </div>
+    <script>
+            const buttons = document.querySelectorAll('button');
+            const image = document.getElementById('image');
+            const text = document.getElementById('text');
+            const head=document.getElementById('head');
+            const stories=document.getElementById('stories');
+            const narrator=document.getElementById('narrator');
+            // Define the functions to change the text and image
+            function changeImage(src) {
+            image.src = src;
+        }   
+        function changeStories(stories){
+            document.getElementById('stories').innerHTML=stories;
+        }
+        function changeNarrator(narrator){
+            document.getElementById('narrator').innerHTML=narrator;
+        }
+
+        function changeText(text) {
+            document.getElementById('text').innerHTML = text;
+        }
+        function changeHead(head) {
+            document.getElementById('head').innerHTML = head;
+        }
+        // Add event listeners to the buttons
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                if (index === 0) {
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fsleep-player-harry.webp&w=1920&q=75');
+                    changeText('Sleep Stories will guide you off to sleep quickly and naturally. Choose from 300+ titles, which includes celebrated voices like Matthew McConaughey, Idris Elba, and Jennifer Garner.');
+                    changeHead('Bedtime stories for grownups');
+                    changeStories('Dream With Me');
+                    changeNarrator('Narrated by Harry Styles');
+                } 
+                else if(index === 1) {
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fsleep-player-music.webp&w=1920&q=75');
+                    changeText('Calm Music puts relaxation at your fingertips. Explore a universe of soothing sounds and genres, including celebrated artists like Moses Sumney and Tom Middleton.');
+                    changeHead('Soothing melodies designed for sleep');
+                    changeStories('432 Hz for Sleep');
+                    changeNarrator('');
+                }
+                else if(index===2){
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fsleep-player-tracking.webp&w=1920&q=75');
+                    changeText('Our sleep tracking tools make it easy to build the habits of healthy sleep. Log your nightly hours, monitor your sleep quality, and create a bedtime routine that works for you.<br><br>A new way to track your sleep Reflect on your nightly sleep quality and what might have affected it');
+                    changeHead('A toolkit to get your sleep on track');
+                    changeStories('');
+                    changeNarrator('');
+                }
+                else if(index===3){
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fsleep-player-winnie.webp&w=1920&q=75');
+                    changeText('Getting your kids to bed will never be the same. Our Sleep Stories for kids feature characters your little ones will know and love, like Transformers, My Little Pony, Minions, and many more.');
+                    changeHead('Bedtime can be a blast');
+                    changeStories('Winnie the Pooh');
+                    changeNarrator('Narrated by Tom Hiddleston');
+                }
+            });
+        });
+  </script>
+    </body>
+</html>

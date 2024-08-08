@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            background-image: url("https://imgs.search.brave.com/2jbds_MhrjXM9MZmLXxCAjLxSflPJ4dVLfdtqu1s5Xc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjkz/NDY5MTUwL3Bob3Rv/L21lZGl0YXRpbmct/YXQtdGhlLW9mZmlj/ZS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9OFdnMU9PVnN5/VWhVSjRrSDVkamdr/UC04Nm54TmdscDU2/U2JBUG8yZGViOD0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: transparent;
+        }
+        input, select, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: transparent;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Add New Meditation Record</h1>
+    <form id="meditation-form">
+        <input type="date" id="session-date" required>
+        <input type="number" id="duration" placeholder="Duration (minutes)" required>
+        <select id="meditation-type" required>
+            <option value="">Select Type of Meditation</option>
+            <option value="Mindfulness">Mindfulness</option>
+            <option value="Guided Meditation">Guided Meditation</option>
+            <option value="Zen Meditation">Zen Meditation</option>
+            <option value="Transcendental">Transcendental</option>
+            <!-- Add more options as needed -->
+        </select>
+        <textarea id="notes" placeholder="Notes" rows="4" cols="50"></textarea>
+        <button type="submit">Add Record</button>
+    </form>
+
+    <script>
+        document.getElementById('meditation-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Get form values
+            const sessionDate = document.getElementById('session-date').value;
+            const duration = document.getElementById('duration').value;
+            const meditationType = document.getElementById('meditation-type').value;
+            const notes = document.getElementById('notes').value;
+
+            // Create new table row
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${sessionDate}</td>
+                <td>${duration}</td>
+                <td>${meditationType}</td>
+                <td>${notes}</td>
+            `;
+
+            // Append new row to the table
+            document.getElementById('meditation-records').appendChild(newRow);
+
+            // Clear form
+            document.getElementById('meditation-form').reset();
+        });
+    </script>
+</body>
+</html>

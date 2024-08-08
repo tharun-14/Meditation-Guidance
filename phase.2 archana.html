@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="phase.2archana.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     
+    <script src="https://kit.fontawesome.com/aefb1082b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar shadow navbar-expand-lg navbar-light bg-white fixed-top  ">
+     
+    <a class="navbar-brand" href="#">
+      <img  class="logo" src="https://www.creativefabrica.com/wp-content/uploads/2020/09/21/Food-Logo-Graphics-5583096-1-580x386.jpg"/>
+    </a>
+    <h3>RETAIL APP</h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-4">
+        <a class="nav-link active" href="#homeContainer">Home </a>
+        <a class="nav-link active" href="#foodItems" id="navItem1">Grocery items</a>
+        <a class="nav-link active" href="final.html" id="navItem3">Sign up</a>
+        <a class="nav-link active" href="#" id="navItem3">login</a>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div id="homeContainer" class="home-container">
+    <div class="text-center">
+      <h1 class="home-heading">Let Customers try before they Buy</h1>
+      
+      <a href="#foodItems"><i class="home-view-button fa fa-light fa-circle-arrow-down"></i>
+        </a>
+       
+    </div>
+  </div>
+
+<!--Grocery ITEMS CONTAINER--> 
+<div id="foodItems" class="food-items-data-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5">
+          <h1 class="view-more-heading">Grocery items</h1>
+        </div>
+        <!--Fruits Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+        <div class="shadow food-list-card-container">
+          <img class="food-card-image w-100" src="https://imgs.search.brave.com/ZDJZKRLWSEOZ2oC5bnNWuypQj7v6XHo0Ej_ab4fncEc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9mcmVzaC1mcnVp/dHMtYmVycmllc18z/OTEwNTItMzM0Mjcu/anBnP3NpemU9NjI2/JmV4dD1qcGc">
+          <h1 class="food-card-heading">Fruits </h1>
+          
+           <a ><!-- Button trigger modal -->
+            <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal1">
+             <a> View All</a>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" >
+              <div class="modal-dialog modal-x2">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title food-title" id="exampleModalLabel">
+                      Fruits
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="food-items-list-container col-12 mb-4">
+                        <img class="food-item-image" src="https://imgs.search.brave.com/0nAQr6gAqn0v64IqXslpmTS32PMuGcfxdAq9bbtTsw4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/amttaW50LmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMS8w/OC9hcHBsZS0yNzg4/NjYyXzY0MC5qcGc">
+                        <div class="ml-4">
+                        <h1 class="food-item-heading">Kashmir Apples</h1>
+                      <p>&#8377;400</p>
+                          <button id="pminus" onclick="Fruits_decereasevalue('Kashmir Apples')">−</button>
+                          <p id="Kashmir Apples" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Fruits_increasevalue('Kashmir Apples')" style="margin-left: 5px;">+</button>
+                      </div>
+                      <hr/>
+                      </div>
+                      <div class="food-items-list-container col-12 mb-4">
+                        <img class="food-item-image" src="https://imgs.search.brave.com/ncXLxqEsuIZ2-KEapClr4OsS-NfANWYuLawr7CmovBI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDMyODQ1/OTIuanBn">
+                        <div class="ml-4">
+                        <h1 class="food-item-heading">Alphonso Mango</h1>
+                      <p>&#8377;300</p>
+                          <button id="pminus" onclick="Fruits_decereasevalue('Alphonso Mango')">−</button>
+                          <p id="Alphonso Mango" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Fruits_increasevalue('Alphonso Mango')" style="margin-left: 5px;">+</button>  
+                      </div>
+                      <hr/> 
+                      </div>
+                    
+                      <div class="food-items-list-container col-12 mb-4">
+                        <img class="food-item-image" src="https://imgs.search.brave.com/pBrqxLfV58BV8PCRVQiRmltjc60oj74eCeYJgbqnsiI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/Nzc5MTYwODIyMzMt/Zjk3ZWQyMmU0ZGY4/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRoOGZH/SnNkV1ZpWlhKeWVY/eGxibnd3Zkh3d2ZI/eDhNQT09">
+                        <div class="ml-4">
+                        <h1 class="food-item-heading">Blue-Berry</h1>  
+                      <p>&#8377;500</p>
+                          <button id="pminus" onclick="Fruits_decereasevalue('Blue-Berry')">−</button>
+                          <p id="Blue-Berry" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Fruits_increasevalue('Blue-Berry')" style="margin-left: 5px;">+</button>
+                      </div>
+                      <hr/> 
+                      </div>
+
+                      <div class="food-items-list-container col-12 mb-4">
+                        <img class="food-item-image" src="https://imgs.search.brave.com/1vTkFG27QS4K-AuHwwms1LnRNFRytZB_bKFg5417dTE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vMzE2Mjc3/OS80NjcxNS9pLzYw/MC9kZXBvc2l0cGhv/dG9zXzQ2NzE1NTUw/Ni1zdG9jay1waG90/by1zYXBvZGlsbGEt/ZnJ1aXQtbWFuaWxr/YXJhLXphcG90YS1v/dGhlci5qcGc">
+                        <div class="ml-4">
+                        <h1 class="food-item-heading">Sapota</h1> 
+                      <p>&#8377;200</p>
+                          <button id="pminus" onclick="Fruits_decereasevalue('Sapota')">−</button>
+                          <p id="Sapota" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Fruits_increasevalue('Sapota')" style="margin-left: 5px;">+</button> 
+                      </div>
+                      <hr> 
+                      </div>
+
+                      <div class="food-items-list-container col-12 mb-4">
+                        <img class="food-item-image" src="https://imgs.search.brave.com/UnIFojzzodgzmK48l1BlBU8ORgI7qphfMUUEq3bEZ24/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xMDQ5Njkx/LzQyNjcvaS80NTAv/ZGVwb3NpdHBob3Rv/c180MjY3MzQ4Ny1z/dG9jay1waG90by1m/cmVzaC1vcmFuZ2Uu/anBn">
+                        <div class="ml-4">
+                        <h1 class="food-item-heading">Orange</h1>  
+                      <p>&#8377;200</p>
+                          <button id="pminus" onclick="Fruits_decereasevalue('Orange')">−</button>
+                          <p id="Orange" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Fruits_increasevalue('Orange')" style="margin-left: 5px;">+</button>
+                      </div>
+                      <hr/> 
+                      </div>
+
+                       
+                  </div>
+                  <div class="modal-footer">
+                  <div id="bill" style="text-align:center;">
+                        <p>Total Bill : &#8377;</p>
+                        <p id="Fruits_output">0</p>
+                  </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class=" save-changes-button">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+        </div>
+        </div>
+
+        <!--Vegetables Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/IQgh4KD9NxjEKJkgtHUFs8ZHSFXd7s7lHXiyVbNc114/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ1/NjQwMzM2OC9waG90/by9mcmVzaC1oZWFs/dGh5LW9yZ2FuaWMt/dmVnZXRhYmxlcy1i/YWNrZ3JvdW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1V/ekRtbTdZZUZkdmZE/RkctMGpyakR4Z1A5/QkN0aTZFMUtmYktu/UURMdzdnPQ"/>
+            <h1 class="food-card-heading">Vegetables</h1>
+            <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal1">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x2">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Vegetables
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/7Q0O7dqp2Kr4KqxeGMKjKurQQTTxvaavxQakxpLTax8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDcy/NDAyMDk2L3Bob3Rv/L3RvcC12aWV3LW9m/LWdyZWVuLWJpdHRl/ci1nb3VyZHMtaW4t/dGhlLWJhc2tldC53/ZWJwP2I9MSZzPTE3/MDY2N2Emdz0wJms9/MjAmYz1xbWJLMXRz/YmtFUTZLbUloa2tm/WnpaUlVlMGVFcHc0/eEVvLS1YS2RQZG8w/PQ">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Bitter-Gourd</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Vegatables_decereasevalue('Bitter-Guard')">−</button>
+                          <p id="Bitter-Guard" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Vegetables_increasevalue('Bitter-guard')" style="margin-left: 5px;">+</button>
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/Mrw_Oe5t6llWDSUbYkWBRxjZiNWCscARtoHUUIamfM8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFwaWNMdXY2UUwu/anBn">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Bottle-Gourd</h1> 
+                        <p>&#8377;100</p>
+                          <button id="pminus" onclick="Vegatables_decereasevalue('Bottle-Guard')">−</button>
+                          <p id="bitter-Guard" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Vegatables_increasevalue('BottlGuard')" style="margin-left: 5px;">+</button> 
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/TOjLlUlIqAI9sax95SggX8nHRgyt_bCMEwimQPSPTDM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE0/NTk3Nzc1NC9waG90/by9jbG9zZS11cC1v/Zi1va3JhLWxhZGll/cy1maW5nZXJzLWlu/LWEtYmFtYm9vLWJh/c2tldC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9dHFQWW1L/UmtfQVhnb3RDM3N2/cmNoWjQwY0c2Skk1/UFBRaTFLMGk2azF1/bz0">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Lady's Finger</h1> 
+                        <p>&#8377;60</p>
+                          <button id="pminus" onclick="Vegatables_decereasevalue('Ladys Finger')">−</button>
+                          <p id="Lady's Finger" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Vegatables_increasevalue('Ladys Finger')" style="margin-left: 5px;">+</button> 
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/yyaUw0CHHtZlfUTFA7aN2tPjHnvyG0m0PXsFu9L4LNk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWM0LmRlcG9zaXRw/aG90b3MuY29tLzEw/MTY4MjQvMzg1L2kv/NDUwL2RlcG9zaXRw/aG90b3NfMzg1NzM5/OS1zdG9jay1waG90/by1lZ2dwbGFudC1w/dXJwbGUuanBn">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Brinjal</h1> 
+                         <p>&#8377;100</p>
+                          <button id="pminus" onclick="Vegatables_decereasevalue('Brinjal')">−</button>
+                          <p id="Brinjal" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Vegatables_increasevalue('Brinjal')" style="margin-left: 5px;">+</button>
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/BtxMrdYlBIYIWcDvpbDlVatP0obe1yRWOEczdvR_zag/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/NDUyODI3Njg4MTgt/NzI4NjE1Y2M5MTBh/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRaOGZH/Tmhjbkp2ZEhOOFpX/NThNSHg4TUh4OGZE/QT0">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">
+                            Carrot</h1> 
+                         <p>&#8377;200</p>
+                          <button id="pminus" onclick="Vegatables_decereasevalue('Carrot')">−</button>
+                          <p id="Carrot" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Vegatables_increasevalue('Carrot')" style="margin-left: 5px;">+</button>
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <div id="bill">
+                        <p>Total Bill : &#8377;</p>
+                        <p id="Vegatables_output" style="padding-right: 500px;">0</p>
+                      </div>   
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+        <!--Grains Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/InTu_DFQdJSBIX8a2Mxw5g1lr0LmiaKSpDBN8GVBDG4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vNDc0OTUw/MS83MDk1L2kvNDUw/L2RlcG9zaXRwaG90/b3NfNzA5NTc2NDUt/c3RvY2stcGhvdG8t/YW4tYXNzb3J0bWVu/dC1vZi13aG9sZS1n/cmFpbnMuanBn"/>
+            <h1 class="food-card-heading">Grains</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal3">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Grains
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/1iIGZnfEZastZ6JvQC7TSs12jrDz-4tjV3hw3b8_4fw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9yaWNlXzEyMDUt/Njc1LmpwZz9zaXpl/PTYyNiZleHQ9anBn">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Rice</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Grains_decereasevalue('Rice')">−</button>
+                          <p id="Rice" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Grains_increasevalue('Rice')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/lq4JnOH0AuttGLLrQ7OclueZIBCZBLZIWKHgQ0sOjus/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTAx/ODI4NjIxMi9waG90/by9iYXJsZXktZ3Jh/aW5zLndlYnA_Yj0x/JnM9MTcwNjY3YSZ3/PTAmaz0yMCZjPWUy/Q2dYRHNxaC1PZkxO/bGVoM2tiME1pQVdW/NFdPQWRFSlRGVm9W/X085Y009">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Barley</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Grains_decereasevalue('Barley')">−</button>
+                          <p id="Barley" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Grains_increasevalue('Barley')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/_E73u3-8H7aOGnx4eSEI4uVAzM_XTnF2VQGRbo8DqYs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9o/ZWFsdGh5LWJyZWFr/ZmFzdC1vYXRtZWFs/LWJlcnJpZXNfMjgy/OS0xMzcxOS5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Oats</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Grains_decereasevalue('Oats')">−</button>
+                          <p id="Oats" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Grains_increasevalue('Oats')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/odm2yxUu9_M6TUGtToLVzdN5Aj2NXwyaCGV1_eQ7Ehs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI4/MjI1NjkxNS9waG90/by9taWxsZXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVhX/NjFSazNTZ2lNTjRI/OUZDek5OTWVFaF95/NVdvSWxEM25URzhN/N2JCNms9">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Millet</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Grains_decereasevalue('Millet')">−</button>
+                          <p id="Millet" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Grains_increasevalue('Millet')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/Ocb1CidisWA0h1A6i9RnXwrWZBBmk7ldoUz6xsRU6eg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjIz/NjgwNzk5L2RlL2Zv/dG8vYnVsZ3VyLXdo/ZWF0LmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1jVzhkY18y/TUNsOVhYQktzdmJp/ZnE5Zmlyb0lUSzRG/aHlQdEYwQTdUY2N3/PQ">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">
+                            Bulgur</h1> 
+                            <p>&#8377;200</p>
+                          <button id="pminus" onclick="Grains_decereasevalue('Bulgur')">−</button>
+                          <p id="Bulgur" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Grains_increasevalue('Bulgur')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <div id="bill">
+                        <p>Total Bill : &#8377;</p>
+                        <p id="Grains_output" style="padding-right: 500px;">0</p>
+                      </div>   
+ 
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+        <!--Flour's Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/-ggkQLyvqaC9aRRTN9Q4fbjLO5W-H8RMqfVyn4JNAjk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9p/bmdyZWRpZW50LWJh/Z3MtZnVsbC1mbG91/cl8yMy0yMTQ5NDgy/NTQ4LmpwZz9zaXpl/PTYyNiZleHQ9anBn"/>
+            <h1 class="food-card-heading">Flours</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal4">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x2">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Flours
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/F-mpqFzdO8YX0Knlb6P4QLs1EDhgAdmVeu5kRsuePgc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/NTgwNjA5L3Bob3Rv/L2hlc3NpYW4tc2Fj/ay1vZi1ncmFpbi1h/bmQtd2hlYXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTZR/dmJNUjZ5WlQ2dms3/eUVBRHkxeWRCSDBP/a3Fhci1kYkZ2WGxw/R19IT3M9">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Wheat Flour</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Flours_decereasevalue('Wheat Flour')">−</button>
+                          <p id="Wheat Flour" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Flours_increasevalue('Wheat Flour')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/VnCtrp3SW2fqP_9-HL5omZvMuwuMM-Tzmg_nKNy9-v4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDcz/NDU3MTEyL3Bob3Rv/L3BvcnRpb24tb2Yt/cmljZS1mbG91ci53/ZWJwP2I9MSZzPTE3/MDY2N2Emdz0wJms9/MjAmYz1BSkNYU1ly/MHlGQWQ3Q3hBVFBk/ZDh5cTJJMmk0X0Vk/MktyN3hZbDQyc1lz/PQ">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Rice Flour</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Flours_decereasevalue('Rice Flour')">−</button>
+                          <p id="Rice Flour" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Flours_increasevalue('RiceFlour')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/JI81FME4CIVuDdHghWJsRHuOc0gt-0El-p1BKwmNUAQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9yYWdp/LWZsb3VyLWVsZXVz/aW5lLWNvcmFjYW5h/LWZpbmdlci1taWxs/ZXQtYW5udWFsLWhl/cmJhY2VvdXMtcGxh/bnQtd2lkZWx5LWdy/b3duLWFzLWNlcmVh/bC1tYWRlLWZsYXRi/cmVhZHMtMTAxMDI4/Nzg4LmpwZw">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Ragi Flour</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Flours_decereasevalue('Ragi Flour')">−</button>
+                          <p id="Ragi Flour" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Flours_increasevalue('Ragi Flour')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/2dyI1Nzb6pHokWWpXctMsAPPizXWIa1ihCpCXea3Ww4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDMu/ZGVwb3NpdHBob3Rv/cy5jb20vMTAxMDA1/MC8xNzMyNS9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzE3MzI1NzQx/Ni1zdG9jay1waG90/by1zcG9vbi1vZi13/aGVhdC1mbG91ci5q/cGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading"> All-Purpose-Flour(Maida)</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Flours_decereasevalue('All-purpose-Flour(Maida) Flour')">−</button>
+                          <p id="All-Purpose-Flour(Maida)" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Flours_increasevalue('All-Purpose-Flour(Maida) Flour')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/fGboeEkrvaGgW6bZWdwZpp_9NYmUCiqZIfokOR2bcsE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/Mzc4NDYzNi9waG90/by9jb3JubWVhbC1h/bmQtY29ybi5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9NVJ2/UnUzaU02QV9pN2dC/TDZJTlR5UFlHYkhy/QkQ1STgwS3BqWjg2/dTlHTT0">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">
+                            Corn Flour</h1>  
+                            <p>&#8377;200</p>
+                          <button id="pminus" onclick="Flours_decereasevalue('Corn Flour')">−</button>
+                          <p id="Corn Flour" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Flours_increasevalue('Corn Flour')" style="margin-left: 5px;">+</button>                        
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+        <!--Pulses Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/yz67NqldxFl06Mk4KEVuAYWPMuB3CJgMchUmmHSxZNo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE3/ODc5NjU1Mi9waG90/by90b3Atdmlldy1v/Zi1sZWd1bWlub3Vz/LXNlZWRzLW9uLXJ1/c3RpYy13b29kLXRh/YmxlLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1ISzV2c29p/ZUNmNUk2ZFdfUnhh/TnFNOW5SMUwxTVhM/d20xMC1iT09tMHRB/PQ"/>
+            <h1 class="food-card-heading">Pulses</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal5">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Pulses
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/xsmaZCIOiX2jbBHcPoyx9mWnMXYWyJU32gwNi4fMtqI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aGVi/ZWxseXJ1bGVzdGhl/bWluZC5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMjAvMDIv/Z3JlZW4tbW9vbmct/ZGFsLXJlY2lwZS02/ODN4MTAyNC5qcGcu/d2VicA">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Green Gram(Moong Dal)</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Pulses_decereasevalue('Green Gram(Moong Dal)')">−</button>
+                          <p id="Green Gram(Moong Dal)" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Pulses_increasevalue('Green Gram(Moong Dal)')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/gNiO3SE803YyWlZrZ7rfaabZRDsXWQxDlmsxkFfZnV8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ibGFjay1ncmFt/LWJsYWNrLW11bmdf/NTU2MTAtMjU3Mi5q/cGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Black Gram(Uradal)</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Pulses_decereasevalue('Black Gram(Uradal)')">−</button>
+                          <p id="Black Gram(Urdal)" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Pulses_increasevalue('Black Gram(Uradal)')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/qogKlb9PskvOKOUN235wap7tJVFfBHAldZaEfti59ds/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9iZW5n/YWwtZ3JhbS0xMTA1/MDE2NS5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Bengal Gram(Chana Dal)</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Pulses_decereasevalue('Bengal Gram(Chana Dal)')">−</button>
+                          <p id="Bengal Gram(Chana Dal)" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Pulses_increasevalue('Bengal Gram(Chana Dal)')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/fH5Lk_VqLp7Z9IJv7j0qavfZzPYsSjcXxQ30v8sdujs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by90/b3Atdmlldy1yYXct/b3JhbmdlLWxlbnRp/bC1pbnNpZGUtcm91/bmQtcG90LXdpdGgt/d29vZGVuLXNwb29u/LWRhcmstYmx1ZS1z/dXJmYWNlXzE0MDcy/NS00OTE0Mi5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Toor Dal</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Pulses_decereasevalue('Toor Dal')">−</button>
+                          <p id="Toor Dal" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Pulses_increasevalue(' Toor Dal')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/SdCECF6hhYYclu4Vmv0bvMMkoQbmJnAwunSjVSrKvLQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc3BydWNlZWF0/cy5jb20vdGhtYi95/SzRhbzNsYWNJQmRG/YUFrQ3NnaDRmNWFN/VzQ9LzE1MDB4MC9m/aWx0ZXJzOm5vX3Vw/c2NhbGUoKTptYXhf/Ynl0ZXMoMTUwMDAw/KTpzdHJpcF9pY2Mo/KS9jaG9sZS1jaGlj/a3BlYS1jdXJyeS0x/OTU3OTQ2LXN0ZXAt/MDgtMTM5YjkxMTUz/NDQwNGE2YmJlZTAx/NGZjNzUxOGY3ZmQu/anBn">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">
+                            Chick Peas(Chole)</h1>
+                            <p>&#8377;200</p>
+                          <button id="pminus" onclick="Pulses_decereasevalue('Chick Peas(Chole)')">−</button>
+                          <p id="Chick Peas(Chole)" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Pulses_increasevalue('Chick Peas(Chole)')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+         
+        <!--Spices Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/vexbgTCkdIN4aZxfQ-kEuoJgvf0id_LgAui299vCx7Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI5/ODQzNDM4My9waG90/by9qYXJzLW9mLXNw/aWNlcy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9MlYtajJ4/WVlESmRxOHpfZUNI/aElrWmMxcTJkTDlt/Z2h2WVFNX1cwLVgt/Yz0"/>
+            <h1 class="food-card-heading">Spices</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal6">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        --Spices
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/j9qv9pkAnha_73dnyDjgYS8KNtuBaipKEQ28gzhJWsg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/NDc3MTgyL3Bob3Rv/L2NvcmlhbmRlci1z/ZWVkcy1hbmQtY2ls/YW50cm8tbGVhdmVz/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1WSHJ3UzVhNlVD/UDdZd0ZuRXpZOFJx/V2o3aXZVU21rczJG/NElDMlY0eE9RPQ">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Coriander Seeds</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Spices_decereasevalue('Coriander Seeds')">−</button>
+                          <p id="Coriander Seeds" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Spices_increasevalue('Coriander Seeds')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/JnbCQMDwJUBO_imhPpMp-YRl56f11FAM1OxDFLbvYjQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jdW1pbi1zZWVk/cy1jYXJhd2F5LXdv/b2Rlbi1zcG9vbi11/c2VkLWFzLXNwaWNl/XzMzMDQyNi03MDUu/anBnP3NpemU9NjI2/JmV4dD1qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Cumin Seeds</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Spices_decereasevalue('Cumin Seeds')">−</button>
+                          <p id="Cumin Seeds" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Spices_increasevalue('Cumin Seeds')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/RU8TAmP9ucyazQh0rCv_AOHHM675acmlJxwZmEZnv0w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODAw/OTM0MjUyL3Bob3Rv/L2JsYWNrLXBlcHBl/cmNvcm4tdG9wLXZp/ZXctb24tcnVzdGlj/LXNhY2suanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUFQeUl4/TlpnYzktUHRLR3VL/NTZCMFV2YnA0TnNm/MXdnek9wOU9CcUJh/Mms9">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Black Pepper</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Spices_decereasevalue('Black Pepper')">−</button>
+                          <p id="Black Pepper" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Spices_increasevalue('Black Pepper')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/TZIVdYOsss12Rij4d4REyYDAbRvFBYhS1UTlBTu8wB8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/MjM4OTE4NS9waG90/by93aG9sZS1iYXkt/bGVhdmVzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz03RnJX/cTlTZ1g0MS1zTVBX/SFFDZHZ5cFMtY1Q4/eHhYMmxkUkNINGp2/cWJVPQ">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Bay Leaves</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Spices_decereasevalue('Bay Leaves')">−</button>
+                          <p id="Bay Leaves" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Spices_increasevalue('Bay Leaves')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/FPpMUNmNv4PzRTR7fJJkgQJKdItGtJuY3l7Z1q6q4kI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzA0LzUyLzMw/LzM2MF9GXzEwNDUy/MzA5Nl9vbndNbEZo/UHNNZGNqaDhFcGhj/T0t2Nk1OaW56R0h4/dS5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Cloves</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Spices_decereasevalue('Cloves')">−</button>
+                          <p id="Cloves" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Spices_increasevalue('Cloves')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+        <!--Cooking Oils Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/mYP6lYgWu0BkrJVAnp7pLMO65NxbFgE4aSQUolud3hA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Zm9vZGJ1c2luZXNz/bmV3cy5uZXQvZXh0/L3Jlc291cmNlcy8y/MDIxLzYvRWRpYmxl/T2lsc19MZWFkLmpw/Zz9oZWlnaHQ9NjY3/JnQ9MTYyMzI3MDQy/NyZ3aWR0aD0xMDgw"/>
+            <h1 class="food-card-heading">Cooking Oils</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal7">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Cooking Oils
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/xkn6834u-rQ5HpXBXGD9z2AKlbFqOPo-qbrxocO6BA0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzQwLzg5Lzcy/LzM2MF9GXzQ0MDg5/NzI0NV92MTlIZGlu/UEpZd3BFcDk4eXhB/bG9OeThkQUtXaXNB/My5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Groundnut Oil</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="CookingOils_decereasevalue('Groundnut Oil')">−</button>
+                          <p id="Groundnut Oil" style="display:inline-block"></p>
+                          <button id="pplus" onclick="CookingOils_increasevalue('Groundnut Oil')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/SY1J1JPQijek7eYF57lKKFzpb1hPxuxUQqpoXcPmmtU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzA4L1N1bmZsb3dl/cl9vaWxfYW5kX3N1/bmZsb3dlci5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Sunflower Oil</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="CookingOils_decereasevalue('Sunflower Oil')">−</button>
+                          <p id="Sunflower Oil" style="display:inline-block"></p>
+                          <button id="pplus" onclick="CookingOils_increasevalue('Sunflower Oil')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/CwxNm4u7WAWOcyziP2VrAjuOQ293J2i7VdHNjJtJHD8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2YzL0NvY29udXRf/YW5kX29pbC5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Coconut Oil</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="CookingOils_decereasevalue('Coconut Oil')">−</button>
+                          <p id="Coconut Oil" style="display:inline-block"></p>
+                          <button id="pplus" onclick="CookingOils_increasevalue('Coconut Oil')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/8kKt2NHZHp4mLq-wiQurSN5ioJDIr0lxdXHvTMCiPKc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzE2LzI5LzYx/LzM2MF9GXzIxNjI5/NjE1OV83aXFVWm43/elJQYk5yODVWWFZU/SnQxTTBadjFnVW8w/Uy5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Olive Oil</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="CookingOils_decereasevalue('Olive Oil')">−</button>
+                          <p id="Olive" Oil" style="display:inline-block"></p>
+                          <button id="pplus" onclick="CookingOils_increasevalue('Olive Oil')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/wDNgVmiGKCwAyrHjFYimLXQKnOdUC72yyCyCJ_8dOTc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGFzdGluZ3RhYmxl/LmNvbS9pbWcvZ2Fs/bGVyeS9ldmVyeXRo/aW5nLXlvdS1uZWVk/LXRvLWtub3ctYWJv/dXQtbXVzdGFyZC1v/aWwvaW50cm8tMTY2/NDYzNTEyMS5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Mustard Oil</h1> 
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="CookingOils_decereasevalue('Mustard Oil')">−</button>
+                          <p id="Mustard Oil" style="display:inline-block"></p>
+                          <button id="pplus" onclick="CookingOils_increasevalue('Mustard Oil')" style="margin-left: 5px;">+</button>                         
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+          
+        <!--Milk-Products Container-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/IZZ6hiDP6ccVVmjkSdSMprUzrRS0wvhejC6tjzVbgjc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI0/MTQ4MjYyMy9waG90/by9hc3NvcnRlZC1v/Zi1kYWlyeS1wcm9k/dWN0LXdpdGgtbWls/ay1idXR0ZXItY2hl/ZXNlLndlYnA_Yj0x/JnM9MTcwNjY3YSZ3/PTAmaz0yMCZjPUtH/cldqeFVHZWx1ZnlU/Z1c2bllYM0lJWXVY/WjdBbGwydkR3RHFx/Y0NjN2M9"/>
+            <h1 class="food-card-heading">Milk-Products</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal8">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Milk-Products
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/9JEnPfgqxlP15iZCjZ9W79bcFsCZM35EHdTyUS3yKFM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzE0LzkxLzIy/LzM2MF9GXzIxNDkx/MjI5NV9TanJ4cWlH/OGs5MXFNVkNXcWJD/R3dINjNWenFGS0Zk/Yy5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Milk</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="MilkProducts_decereasevalue('Milk')">−</button>
+                          <p id="Milk" style="display:inline-block"></p>
+                          <button id="pplus" onclick="MilkProducts_increasevalue('Milk')" style="margin-left: 5px;">+</button>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/zIjT8PQ13q7hhn7ozyAN4zHjU-wvWQBWVjjH6rP9Hqs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzYxLzc5LzI4/LzM2MF9GXzYxNzky/ODQyX3ZWc1hEM3Jv/RmFxM1diTTVBRmEy/VGlmS05JTklzN0hl/LmpwZw">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Butter</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="MilkProducts_decereasevalue('Butter')">−</button>
+                          <p id="Butter" style="display:inline-block"></p>
+                          <button id="pplus" onclick="MilkProducts_increasevalue('Butter')" style="margin-left: 5px;">+</button>                            
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/AJg6Pgz7MlilN4ZqAutVK8btkKY4eXko05Ei4vAiD_o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTE0/OTgxNjQ0L3Bob3Rv/L2NoZWVzZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9V096/YUdMeGtqdlFONEpk/M0M0YlQ3YjU5Mmpk/dTNpQVo5a1E3cTkz/eXVYOD0">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">
+                            Cheese</h1>
+                            <p>&#8377;200</p>
+                          <button id="pminus" onclick="MilkProducts_decereasevalue('Milk')">−</button>
+                          <p id="Cheese" style="display:inline-block"></p>
+                          <button id="pplus" onclick="MilkProducts_increasevalue('Cheese')" style="margin-left: 5px;">+</button>                            
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/Y1-CZ1u32nPJKBAgX87Q8nBk0dQrs8qLjOjqwEnWlsM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9naGVlLWNsYXJp/ZmllZC1idXR0ZXIt/Y2xvc2UtdXAtd29v/ZGVuLWJvd2wtc2ls/dmVyLXNwb29uLXNl/bGVjdGl2ZS1mb2N1/c180NjY2ODktMjEx/NzAuanBnP3NpemU9/NjI2JmV4dD1qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Ghee</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="MilkProducts_decereasevalue('Ghee')">−</button>
+                          <p id="Ghee" style="display:inline-block"></p>
+                          <button id="pplus" onclick="MilkProducts_increasevalue('Ghee')" style="margin-left: 5px;">+</button>                            
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/mCUiQ2y21ofdn25mlFFHV3_9LxmfO_m-Xdbpn1oaOBM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzUzLzk2LzA4/LzM2MF9GXzI1Mzk2/MDgxN19kcFd2OVZt/SXgxMG1QUlJzRU8z/RWxOTTF4b09VUUdl/dC5qcGc">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">
+                            Yogurt</h1> 
+                            <p>&#8377;200</p>
+                          <button id="pminus" onclick="MilkProducts_decereasevalue('Yogurt')">−</button>
+                          <p id="Yogurt" style="display:inline-block"></p>
+                          <button id="pplus" onclick="MilkProducts_increasevalue('Yogurt')" style="margin-left: 5px;">+</button>                           
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+
+        <!--Biscuits Cointainer-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/ePt9t4znrB8J_2ZEjOLgNQfRdKQW0Cfu__Ho607EESA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzA5LzY1LzU4/LzM2MF9GXzk2NTU4/MzJfQ2FDV1YyY0Nk/bjNBTG5FbHpGS3FE/cVV1V2xaT0dIaEou/anBn">
+            <h1 class="food-card-heading">Biscuits</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal9">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Biscuits
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/XB9KqdJrVHoWzZ6zchv7wsz8_yZvO3WV2pMrWcgci8o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ueXBv/c3QuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9zaXRlcy8yLzIw/MTcvMDMvMTcwMzA3/LW9yZW9zLXRoaW5n/cy1kaWRudC1rbm93/LWZlYXR1cmUuanBn/P3F1YWxpdHk9NzUm/c3RyaXA9YWxsJnc9/NzQ0">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Oreo</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Biscuits_decereasevalue('Oreo')">−</button>
+                          <p id="Oreo" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Biscuits_increasevalue('Oreo')" style="margin-left: 5px;">+</button>                            
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://bsmedia.business-standard.com/_media/bs/img/article/2015-02/26/full/1424965698-5777.jpg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Parle-G</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Biscuits_decereasevalue('Parle-G')">−</button>
+                          <p id="Parle-G" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Biscuits_increasevalue('Parle-G')" style="margin-left: 5px;">+</button>                            
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://unibicestore.com/cdn/shop/files/Assorted-pack-of-10_New_1.jpg?v=1697282546">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Unibic</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Biscuits_decereasevalue('Unibic')">−</button>
+                          <p id="Unibic" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Biscuits_increasevalue('Unibic')" style="margin-left: 5px;">+</button>                            
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/WnBm9F2N9GI_CqTe6uwo-AApoZ54xaXaJTgdagno7lQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzF2SGg1ZjA0bkwu/anBn">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Hide-and-Seek</h1>
+                          <p>&#8377;200</p>
+                          <button id="pminus" onclick="Biscuits_decereasevalue('Hide-and-Seek')">−</button>
+                          <p id="Hide-and-seek" style="display:inline-block"></p>
+                          <button id="pplus" onclick="Biscuits_increasevalue('Hide-and-Seek')" style="margin-left: 5px;">+</button>                            
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/IU11i8UefzS_dRjpJVwnz78nzI_yGEX5kFCNg9PukKk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YnJpdGFubmlhLmNv/LmluL19uZXh0L2lt/YWdlP3VybD1odHRw/czovL2QyMnFob3Y4/bW9ocjgyLmNsb3Vk/ZnJvbnQubmV0L0dv/b2RfRGF5X0J1dHRl/cl8zZmUyOTZkMjRi/LmpwZyZ3PTE5MjAm/cT0xMDA.jpeg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Good Day</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+        <!--Cold-Drinks Cointainer-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/Wd5klIOrHKV3hbUyov-utZb07uZMeFc5c0ZGBkq8N2w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/b2xvcmZ1bC1jb2Nr/dGFpbHMtd2l0aC1p/Y2VfMTQ0NjI3LTIx/NzQ3LmpwZz9zaXpl/PTYyNiZleHQ9anBn"/>
+            <h1 class="food-card-heading">Cold-Drinks</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal10">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Cold-Drinks
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://imgs.search.brave.com/AlLXK-F_s7HfnsT5crWZdboS0LYg9Hi60Hre2vCC4V8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzFvTDlCTmZvSEwu/anBn">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Thumbs Up</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUZzFevC_qnvdrF6PrRIH3Li9dJAV1qScagBCkw2HMJg&s">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Mountain Dew</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://images.fastcompany.com/image/upload/q_auto:low,f_auto,pg_0,w_707/wp-cms/uploads/2023/04/p-1-90875506-fanta.webp">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Fanta</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://tiimg.tistatic.com/fp/1/003/959/mazza-soft-drink-310.jpg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Mazza</h1>                          
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://rukminim1.flixcart.com/image/800/800/jwfa5jk0/drinks-juice/p/j/j/mixed-fruit-delight-with-cranberry-delight-fruit-beverage-original-imafh4b7z789pjtz.jpeg?q=90">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Tropicano Mixed Fruit</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+        <!--Chocolates Cointainer-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/nx15MtI3XRHiDceH_4FzpwNKdTQ0hzucvte6t7sBXVQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/MTQwODg2ODUxMTIt/MGE3NjBiNzFhM2M4/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRaOGZH/Tm9iMk52YkdGMFpY/eGxibnd3Zkh3d2ZI/eDhNQT09"/>
+            <h1 class="food-card-heading">Chocolates</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal11">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Chocolates
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://www.thefloralmart.com/wp-content/uploads/2021/11/Chocolate-Basket-Hamper.jpg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Dairy Milk</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://bisarga.com/wp-content/uploads/2021/06/NESTLE-MilkyBar-26-g-Pack-of-10-200.jpg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Milky Bar</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/chocolate/e/c/5/374-munch-chocolate-coated-crunchy-wafer-share-pack-187g-pack-of-original-imaggfpfayjuncaz.jpeg?q=90&crop=false">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Munch</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://rukminim2.flixcart.com/image/850/1000/l0h1g280/chocolate/n/o/d/ferns-n-petals-premium-milk-chocolate-6-pieces-imported-ferrero-original-imagc958aearxjfh.jpeg?q=20&crop=false">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Ferrero Rocher</h1>                          
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-GNcrt_IcRgbz23Ga-qy6NfFisyfQe8bRGqd4bNCA6w&s">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Fuse</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+
+        <!--Nuts Cointainer-->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="shadow food-list-card-container">
+            <img class="food-card-image w-100" src="https://imgs.search.brave.com/P4DtZOmZW9xPTfcnJD57eEwFOEYD7NqnVGZuJDzmwRM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDk2/Njg5NzM4L3Bob3Rv/L2Fzc29ydGVkLW51/dHMud2VicD9iPTEm/cz0xNzA2NjdhJnc9/MCZrPTIwJmM9YWFZ/M3c0M19zUjdqamtY/M1YyOXpBaHd6Yi1P/cHdkVGFwMEQ1WGZH/d3lyZz0"/>
+            <h1 class="food-card-heading">Nuts</h1>
+            
+             <a ><!-- Button trigger modal -->
+              <button type="button" class="food-card-button" data-toggle="modal" data-target="#exampleModal12">
+               <a> View All</a>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-x0">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title food-title" id="exampleModalLabel">
+                        Nuts
+                        
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://img.etimg.com/thumb/width-420,height-315,imgsize-138410,resizemode-75,msid-94202755/magazines/panache/a-boon-for-your-skin-your-hearts-best-friend-almond-can-work-wonders/goodness-of-almonds.jpg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Almond</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://shreejifoods.in/cdn/shop/products/71Rzrp23uEL._SL1333.jpg?v=1646656933">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Pista</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+                      
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://www.kashmirica.com/wp-content/uploads/2020/05/Kashmiri-Walnuts.jpg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Walnut</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://post.healthline.com/wp-content/uploads/2019/10/cashew-nut-nuts-bowl-1296x728-header-1296x728.jpg">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Cashew</h1>                          
+                        </div>
+                        <hr> 
+                        </div>
+  
+                        <div class="food-items-list-container col-12 mb-4">
+                          <img class="food-item-image" src="https://royalfantasy.in/cdn/shop/products/Indian-Raisins-Regular-1.jpg?v=1627565545">
+                          <div class="ml-4">
+                          <h1 class="food-item-heading">Rasins</h1>                          
+                        </div>
+                        <hr/> 
+                        </div>
+  
+                         
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class=" save-changes-button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+          </div>
+          </div>
+  <!--view-extra-option-container-->
+       
+</div>
+<script>
+var Fruits_dict={"Kashmir Apples":0,"Alphonso Mango":0,"Blue-Berry":0,"Sapota":0,"Orange":0};  
+  var Fruits_array=["Kashmir Apples","Alphonso Mango","Blue-Berry","Sapota","Orange"];
+  var Fruits_price=[400,300,500,200,200];
+  function Fruits_increasevalue(key){
+    Fruits_dict[key]+=1;
+    document.getElementById(key).textContent=Fruits_dict[key];
+    Fruits_multiplyValues();
+  }
+  function Fruits_decereasevalue(key){
+    if(Fruits_dict[key]!=0){
+      Fruits_dict[key]-=1;
+      document.getElementById(key).textContent=Fruits_dict[key];
+      Fruits_multiplyValues();
+    }
+  }
+  function Fruits_multiplyValues() {
+    var resultContainer = document.getElementById('Fruits_output');
+    resultContainer.innerHTML = '';
+
+    var resultArray =0;
+    for (var i = 0; i < Fruits_price.length; i++) {
+      var arrayValue = Fruits_price[i];
+      var dictionaryKey = Fruits_array[i];
+      var dictionaryValue = Fruits_dict[dictionaryKey];
+      resultArray+= arrayValue * dictionaryValue;
+    }
+    resultContainer.textContent =resultArray;
+  }
+var Vegatables_dict={"Bitter-Guard":0,"Bottle-Guard":0,"Ladys Finger":0,"Brinjal":0,"Carrot":0};  
+  var Vegatables_array=["Bitter-Guard","Bottle-Guard","Ladys Finger","Brinjal","Carrot"];
+  var Vegtables_price=[80,100,60,100,200];
+  function Vegatables_increasevalue(key){
+    Vegatbles_dict[key]+=1;
+    document.getElementById(key).textContent=Vegatables_dict[key];
+    Vegatables_multiplyValues();
+  }
+  function Vegatables_decereasevalue(key){
+    if(Vegatbles_dict[key]!=0){
+      Vegatables_dict[key]-=1;
+      document.getElementById(key).textContent=Vegatables_dict[key];
+      Vegatables_multiplyValues();
+    }
+  }
+  function Vegatables_multiplyValues() {
+    var resultContainer = document.getElementById('Vegatables_output');
+    resultContainer.innerHTML = '';
+
+    var resultArray =0;
+    for (var i = 0; i < Vegatables_price.length; i++) {
+      var arrayValue = Vegatables_price[i];
+      var dictionaryKey = Vegatables_array[i];
+      var dictionaryValue = Vegatables_dict[dictionaryKey];
+      resultArray+= arrayValue * dictionaryValue;
+    }
+    resultContainer.textContent =resultArray;
+  }
+  var Grains_dict={"Rice":0,"Barley":0,"Oats":0,"Millet":0,"Bulgur":0};  
+  var Grains_array=["Rice","Barley","Oats","Millet","Bulgur"];
+  var Grains_price=[200,250,200,300,250];
+  function Grains_increasevalue(key){
+    Grains_dict[key]+=1;
+    document.getElementById(key).textContent=Grains_dict[key];
+    Grains_multiplyValues();
+  }
+  function Grains_decereasevalue(key){
+    if(Grains_dict[key]!=0){
+      Grains_dict[key]-=1;
+      document.getElementById(key).textContent=Grains_dict[key];
+      Grains_multiplyValues();
+    }
+  }
+  function Grains_multiplyValues() {
+    var resultContainer = document.getElementById('Grains_output');
+    resultContainer.innerHTML = '';
+
+    var resultArray =0;
+    for (var i = 0; i < Grains_price.length; i++) {
+      var arrayValue = Grains_price[i];
+      var dictionaryKey = Grains_array[i];
+      var dictionaryValue = Grains_dict[dictionaryKey];
+      resultArray+= arrayValue * dictionaryValue;
+    }
+    resultContainer.textContent =resultArray;
+  }
+  var Flours_dict={"Wheat Flour":0,"Rice Flour":0,"Ragi Flour":0,"All-Purpose-Flour(Maida)":0,"Corn Flour":0};  
+  var Flours=["Wheat Flour","Rice Flour","Ragi Flour","All-Purpose-Flour(Maida)","Corn Flour"];
+  var Flours=[200,250,200,300,250];
+  function Flours(key){
+    Flours[key]+=1;
+    document.getElementById(key).textContent=Flours[key];
+    Flours();
+  }
+  function Flours_decereasevalue(key){
+    if(Flours[key]!=0){
+      Flours[key]-=1;
+      document.getElementById(key).textContent=Flours[key];
+      Flours();
+    }
+  }
+  function Flours() {
+    var resultContainer = document.getElementById('Flours_output');
+    resultContainer.innerHTML = '';
+
+    var resultArray =0;
+    for (var i = 0; i < Flours.length; i++) {
+      var arrayValue = Flours[i];
+      var dictionaryKey = Flours[i];
+      var dictionaryValue = Flours[dictionaryKey];
+      resultArray+= arrayValue * dictionaryValue;
+    }
+    resultContainer.textContent =resultArray;
+  }
+  var biryani_dict={"Hyderabadi biryani":0,"Lucknowi biryani":0,"Calcutta biryani":0,"Mughlai biryani":0,"Memoni biryani":0};  
+  var biryani_array=["Hyderabadi biryani","Lucknowi biryani","Calcutta biryani","Mughlai biryani","Memoni biryani"];
+  var biryani_price=[200,250,200,300,250];
+  function biryani_increasevalue(key){
+    biryani_dict[key]+=1;
+    document.getElementById(key).textContent=biryani_dict[key];
+    biryani_multiplyValues();
+  }
+  function biryani_decereasevalue(key){
+    if(biryani_dict[key]!=0){
+      biryani_dict[key]-=1;
+      document.getElementById(key).textContent=biryani_dict[key];
+      biryani_multiplyValues();
+    }
+  }
+  function biryani_multiplyValues() {
+    var resultContainer = document.getElementById('biryani_output');
+    resultContainer.innerHTML = '';
+
+    var resultArray =0;
+    for (var i = 0; i < biryani_price.length; i++) {
+      var arrayValue = biryani_price[i];
+      var dictionaryKey = biryani_array[i];
+      var dictionaryValue = biryani_dict[dictionaryKey];
+      resultArray+= arrayValue * dictionaryValue;
+    }
+    resultContainer.textContent =resultArray;
+  }
+</script>
+</body>
+</html>

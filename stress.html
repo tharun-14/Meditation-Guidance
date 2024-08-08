@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Stress</title>
+        <link rel="stylesheet" href="stress.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <h1>Stress relief and Anxiety tools</h1>
+        <div class="stress_page">
+            <div class="stress_text">
+                <p id="heading">Anxiety and stress relief whenever you need it</p>
+                <p id="explain">Learn how to calm anxiety and find the tools for in-the-moment stress relief. Our clinical experts and meditation teachers are here with a wide range of stress relief programs, meditations for anxiety, and guided content to help you soothe anxiety and feel better.</p>
+                <a href="#nav-container" class="arrow_head"><ion-icon name="arrow-down-circle-outline"></ion-icon></a>
+            </div>            
+                <img id="stress_pic" src="https://img.freepik.com/free-photo/painting-person-suffering-from-anxiety_23-2150859310.jpg?t=st=1715424894~exp=1715428494~hmac=a21c378c04bd536723af221dad6e01a42832fb9f10f7ffc63fa92170317a6017&w=360">
+        </div>
+        <br><br>
+        <div id="nav-container">
+            <button id="button1">Pratical Tools</button>
+            <button id="button2">Quick Relief</button>
+            <button id="button3">Breath Work</button>
+            <button id="button4">Grounding Exercises</button>
+            <div class="stress_main">
+                <div class="stress_main_text">
+                    <p id="head">Get in-the-moment relief</p>
+                    <p id="text">Our clinical experts and mindfulness teachers are here to support you, with a wide range of programs for work stress, acute anxiety, negative thoughts, and more.</p>
+                    <p id="stories">Overcome Stress and Anxiety</p>
+                    <p id="narrator" style="line-height: 0px;">Narrated by Dr. Julie Smith</p>
+                    <img src="recording.png" id="recording">
+                </div>
+                <img id="image" src="https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fstress-player-stress.webp&w=1920&q=75" alt="Image 1">
+            </div>
+          </div><br><br><br><br><br><br><br>
+          <div class="go_back">
+            <p style=" color: black;">Press the button to go back to the Main Page</p>
+            <a href="welcome_page.html" class="arrow_head"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
+        </div>
+    <script>
+            const buttons = document.querySelectorAll('button');
+            const image = document.getElementById('image');
+            const text = document.getElementById('text');
+            const head=document.getElementById('head');
+            const stories=document.getElementById('stories');
+            const narrator=document.getElementById('narrator');
+            // Define the functions to change the text and image
+            function changeImage(src) {
+            image.src = src;
+        }   
+        function changeStories(stories){
+            document.getElementById('stories').innerHTML=stories;
+        }
+        function changeNarrator(narrator){
+            document.getElementById('narrator').innerHTML=narrator;
+        }
+
+        function changeText(text) {
+            document.getElementById('text').innerHTML = text;
+        }
+        function changeHead(head) {
+            document.getElementById('head').innerHTML = head;
+        }
+        // Add event listeners to the buttons
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                if (index === 0) {
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fstress-player-stress.webp&w=1920&q=75');
+                    changeText('Our clinical experts and mindfulness teachers are here to support you, with a wide range of programs for work stress, acute anxiety, negative thoughts, and more.');
+                    changeHead('Get in-the-moment relief');
+                    changeStories('Overcome Stress and Anxiety');
+                    changeNarrator('Narrated by Dr. Julie Smith');
+                } 
+                else if(index === 1) {
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fstress-player-relief.webp&w=1920&q=75');
+                    changeText('Sometimes you just need a quick dose of Calm. Choose from a range of tools to manage everyday stressors, including breathing exercises and mindfulness practices.');
+                    changeHead('Feel better in just a few minutes');
+                    changeStories('Relax Your Mind');
+                    changeNarrator('Narrated by Jeff Warren');
+                }
+                else if(index===2){
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fstress-player-breathwork.webp&w=1920&q=75');
+                    changeText('Your breath can support you, and our meditation teachers will show you how. Learn evidence-based breathwork techniques to soften anxiety, release tension, and sharpen focus.');
+                    changeHead('Connect with the calming power of the breath');
+                    changeStories('SOS Breath Work');
+                    changeNarrator('Narrated by Chibs Okereke');
+                }
+                else if(index===3){
+                    changeImage('https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fsubpages%2Fstress-player-grounding.webp&w=1920&q=75');
+                    changeText("When overwhelm sets in, reach for one of Calm's grounding exercises. These short guided sessions use sensation, movement, and breath work to help you relax and reset.");
+                    changeHead('Bring yourself back to the present moment');
+                    changeStories('Ground Yourself in the Body');
+                    changeNarrator('Narrated by Jay Shetty');
+                }
+            });
+        });
+  </script>
+    </body>
+</html>

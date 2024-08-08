@@ -1,0 +1,61 @@
+<html>
+    <body>
+        <!-- HTML structure for navigation buttons -->
+<!-- Create a container element for the buttons and the image/text -->
+<div id="nav-container">
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+    <img id="image" src="image1.jpg" alt="Image 1">
+    <p id="text">Text 1</p>
+  </div>
+  
+  <!-- CSS to add styles to the navigation buttons -->
+  <style>
+    .nav-btn {
+      background-color: #4CAF50; /* default background color */
+      color: #fff; /* default text color */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .nav-btn:hover {
+      background-color: #3e8e41; /* hover background color */
+    }
+  </style>
+  
+  <!-- JavaScript code to update the image when a button is pressed -->
+  <script>
+    // Get the elements
+const buttons = document.querySelectorAll('button');
+const image = document.getElementById('image');
+const text = document.getElementById('text');
+
+// Define the functions to change the text and image
+function changeImage(src) {
+  image.src = src;
+}
+
+function changeText(text) {
+  document.getElementById('text').innerHTML = text;
+}
+
+// Add event listeners to the buttons
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    if (index === 0) {
+      changeImage('image2.jpg');
+      changeText('Text 2');
+    } else {
+      changeImage('image3.jpg');
+      changeText('Text 3');
+    }
+  });
+});
+  </script>
+  
+  <!-- HTML structure for the image element -->
+  <img id="image" src="buddha.png" alt="Default image">
+    </body>
+</html>

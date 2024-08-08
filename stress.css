@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+}
+.stress_page{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    min-width: 60%;
+    max-height: 85%;
+    border-radius: 10px;
+}
+#stress_pic{
+    min-width: 40%;
+    border-radius: 10px;
+}
+.stress_text{
+    display: flex;
+    flex-direction: column;
+}
+#heading{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family:cursive;
+    }
+#explain{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-family:cursive;
+}
+.arrow_head{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+#button1,#button2,#button3,#button4{
+    font-size: 20px;
+    font-family:cursive;
+    margin-bottom: 10px;
+}
+.stress_main{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    transform: translate(30%);
+    width: 60%;
+    border: 15px solid black;
+    border-radius: 10px;
+}
+.stress_main_text{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+#image{
+    min-width: 30%;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+#nav-container{
+    text-align: center;
+    height: 60%;
+    width: 100%;
+}
+
+.go_back{
+    font-size: 20px;
+    text-align: center;
+}
+#head{
+    font-size: 30px;
+}
+#text{
+    font-size: 20px;
+    padding-left: 2px;
+}
+#stories{
+    font-size: 15px;
+    font-weight: bold;
+}
+#narrator{
+    font-size: 13px;
+}
+#recording{
+    max-width: 60%;
+    align-self: center;
+}
