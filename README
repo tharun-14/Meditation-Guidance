@@ -1,0 +1,22 @@
+Mind Peace - Virtual Meditation Guidance
+This is a Virtual Meditation Platform designed to help users meditate from the comfort of their own homes. It offers guided meditations, mindfulness sessions, and customizable timers, helping users to relax, focus, and improve their mental well-being.
+
+About the Project
+The Food Ordering Website allows customers to:
+•	Encourage mindfulness and well-being through accessible virtual meditation.
+•	Offer customizable meditation options, such as soundscapes, session duration, and specific goals (stress relief, focus, etc.).
+•	Provide a space for users to join live meditation sessions with certified instructors or access pre-recorded sessions.
+
+Features
+•	User Authentication: Sign up, log in, and personalized meditation plans for users.
+•	Guided Meditation Sessions: Access a variety of meditation techniques like mindfulness, breathing exercises, and body scans.
+•	Live Sessions: Users can join live group meditation sessions guided by experienced instructors.
+•	Custom Meditation Timer: Set the duration and choose a background sound to create your own meditation session.
+•	Progress Tracker: Visualize your meditation streak and keep track of your progress.
+
+
+Technologies Used
+•	Frontend: HTML5, CSS3, JavaScript
+•	Backend: Java
+•	Database: MySQL
+•	Deployment: Github Pages
